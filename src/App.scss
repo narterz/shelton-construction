@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    body {
+        @apply font-Roboto bg-primary relative;
+    }
+
+    h1 {
+        @apply font-bold xsm:text-bodyLg text-text md:text-headingMd lg:text-headingLg;
+    }
+
+    h3 {
+        @apply font-semibold md:text-subheading text-text xsm:text-body;
+    }
+
+    p {
+        @apply font-normal xsm:text-small md:text-body text-text;
+    }
+
+    small {
+        @apply font-regular xsm:text-small md:text-inputField text-text;
+    }
+
+    button {
+        @apply text-body outline-none text-white bg-secondary border-transparent rounded-md font-light opacity-100 hover:opacity-60 transition-opacity delay-75 ease-in-out;
+    }
+
+    a {
+        @apply font-bold tracking-wide underline text-secondary;
+
+    }
+
+    input,
+    textarea {
+        @apply w-4/5 h-[10%] outline-none indent-5 border-transparent rounded-md;
+    }
+
+    .containers {
+        @apply flex justify-center
+    }
+}
+
+@layer components {
+
+    #about-img {
+        border: 1rem solid #4B7B4D;
+        border-radius: 1%;
+    }
+}
